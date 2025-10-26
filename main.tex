@@ -84,6 +84,12 @@
 \section{Education}
 \input{sections/education}
 
+%-----------TECHNICAL / CORE SKILLS (ROLE-SPECIFIC)-----------
+\section{Technical Skills}
+\IfStrEq{\ROLE}{SWE}{\input{sections/skills-swe}}{}
+\IfStrEq{\ROLE}{PM}{\input{sections/skills-pm}}{}
+\IfStrEq{\ROLE}{SA}{\input{sections/skills-sa}}{}
+
 %-----------EXPERIENCE (ROLE-SPECIFIC)-----------
 \section{Experience}
 \IfStrEq{\ROLE}{SWE}{\input{sections/experience-swe}}{}
@@ -94,10 +100,6 @@
 \section{Projects}
 \input{sections/projects}
 
-%-----------TECHNICAL / CORE SKILLS (ROLE-SPECIFIC)-----------
-\section{Technical Skills}
-\IfStrEq{\ROLE}{SWE}{\input{sections/skills-swe}}{}
-\IfStrEq{\ROLE}{PM}{\input{sections/skills-pm}}{}
-\IfStrEq{\ROLE}{SA}{\input{sections/skills-sa}}{}
+
 
 \end{document}
